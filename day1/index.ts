@@ -11,4 +11,7 @@ class czl implements Blkcor{
     age: 12
     mood: 'good'
 }
+
+const c : any = 'asssss'
+
 console.log('Im a fish');
