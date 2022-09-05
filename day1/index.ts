@@ -11,3 +11,4 @@ class czl implements Blkcor{
     age: 12
     mood: 'good'
 }
+console.log('Im a fish');
