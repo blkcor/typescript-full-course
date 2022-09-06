@@ -6,3 +6,4 @@ var czl = /** @class */ (function () {
 }());
 var c = 'asssss';
 console.log('Im a fish');
+console.log('tmux is better!');
