@@ -1,17 +1,17 @@
 interface Blkcor {
-    name:string,
-    age:number,
-    mood:string,
-    good?:boolean
+    name: string,
+    age: number,
+    mood: string,
+    good?: boolean
 }
-const a :string = 'sddd'
+const a: string = 'sddd'
 
-class czl implements Blkcor{
-    name:'czl'
+class czl implements Blkcor {
+    name: 'czl'
     age: 12
     mood: 'good'
 }
 
-const c : any = 'asssss'
+const c: any = 'asssss'
 
 console.log('Im a fish');
