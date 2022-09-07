@@ -55,3 +55,4 @@ const persopn: Person = new Person('blkcor', 21);
 console.log(persopn.getName()); //blkcor
 
 
+
