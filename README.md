@@ -119,9 +119,105 @@ console.log(persopn.getName()); //blkcor
 <hr/>
 
 ```typescript
+//=================Array============================
+// number array
+const arr: number[] = [1, 2, 3]
+
+//string array
+const strArr: string[] = ['I am superHero!']
+
+//undifine array
+const undifineArr: undefined[] = [undefined]
+
+//object arr 
+const objArr: { name: string, age: number }[] = [{ name: 'blkcor', age: 21 }]
+
+// ==> we can replace it with interface
+interface Person {
+    name: string,
+    age: number
+}
+
+// and write like this
+const newObjArr: Person[] = [{ name: 'blkcor', age: 21 }]
+
+//or with type alias
+type User = {
+    name: string,
+    age: number
+}
+
+// and write like this
+const newObjArr2: User[] = [{ name: 'blkcor', age: 21 }]
+
+//or with class
+class UserClass {
+    name: string
+    age: number
+}
+
+// and write like this ```` tada!
+const newObjArr3: UserClass[] = [{ name: 'blkcor', age: 21 }]
+
+
+//============================Tuple====================
+//use tuple to restrict the content of the array 😊
+const teacherInfo: [string, string, number] = ['Dell', 'mail', 18];
 
 ```
 
 
+## Day4
+>2022.9.9
+<hr/>
+<strong>Interface</strong>
+<hr/>
+
+```typescript
+//===========================interface==================================
+interface Person {
+    //normal attr
+    readonly name: string
+    age: number
+    //permit other attributes
+    [propName: string]: any
+    //abs function attr 
+    Onfocus?: (who: string) => string;
+}
+
+//implement between interface
+interface Teacher extends Person {
+    teach: () => void;
+}
+
+//define function interface
+interface SayHi {
+    (word: string): string;
+}
+
+const person: Person = {
+    name: 'blkcor',
+    age: 12,
+    Onfocus: (who: string) => {
+        return who;
+    }
+}
+
+class User implements Person {
+    name: string
+    age: number
+    Onfocus = (who: string) => {
+        return `I am ${who}`;
+    }
+}
+
+const setPersonName = (person: Person, age: number) => {
+    person.age = age;
+    person.sex = '12';
+}
+
+//user function interface 
+const sayHi: SayHi = (word: string) => word;
 
 
+```
