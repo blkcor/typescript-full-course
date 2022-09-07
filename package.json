@@ -1,0 +1,13 @@
+{
+  "name": "typescript-full-course",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "repository": "https://github.com/blkcor/typescript-full-course.git",
+  "author": "blkcor <blkcor@1029129867@qq.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^18.7.15",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.2"
+  }
+}
