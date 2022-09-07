@@ -326,6 +326,53 @@ function trainAnial(animal: Bird | Dog) {
 
 
 
+## Day8
+>2022.9.13
+<hr/>
+<strong>enum</strong>
+<hr/>
+
+```typescript
+enum Weather {
+    SPRING,
+    SUMMER,
+    AUTOMN,
+    WINTER
+}
+
+function getWeather(month: number): Weather {
+    if (3 <= month && month < 6) {
+        return Weather.SPRING;
+    } else if (6 <= month && month < 9) {
+        return Weather.SUMMER;
+    } else if (9 <= month && month < 12) {
+        return Weather.AUTOMN;
+    } else {
+        return Weather.WINTER;
+    }
+}
+console.log(getWeather(1))
+
+```
+
+
+
+## Day9
+>2022.9.14
+<hr/>
+<strong>genericity</strong>
+<hr/>
+
+```typescript
+
+```
+
+
+
+
+
+
+
 
 
 
