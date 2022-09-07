@@ -1,17 +1,15 @@
-interface Blkcor {
+const teacher: {
     name: string,
-    age: number,
-    mood: string,
-    good?: boolean
-}
-const a: string = 'sddd'
-
-class czl implements Blkcor {
-    name: 'czl'
-    age: 12
-    mood: 'good'
+    age: string
+} = {
+    name: 'czl',
+    age: '12'
 }
 
-const c: any = 'asssss'
+console.log(teacher);
 
-console.log('Im a fish');
+const numbers: Array<number> = [1, 2, 3]
+
+const getTotal: () => number = () => 1;
+
+console.log(getTotal());
