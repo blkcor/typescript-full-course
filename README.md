@@ -2,6 +2,7 @@
 
 ## Day1 
 >2022.9.7
+<hr/>
 <strong>Type Annotation && Type Inference</strong>
 ```typescript
 /* const teacher: {
