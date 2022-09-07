@@ -288,3 +288,59 @@ yarn add nodemon concurrently -D
 
     ...
 ```
+
+
+
+## Day7
+>2022.9.12
+<hr/>
+<strong>Type Assignment</strong>
+<hr/>
+
+```typescript
+interface Bird {
+    fly: boolean;
+    sing: () => {};
+}
+interface Dog {
+    fly: boolean;
+    bark: () => {};
+}
+// animal is the associated type
+function trainAnial(animal: Bird | Dog) {
+    //Types of assertions  1) var as Type  ///  2) (T)var
+    if (animal.fly) {
+        (animal as Bird).sing()
+    } else {
+        (animal as Dog).bark()
+    }
+}
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Day7
+>2022.9.12
+<hr/>
+<strong></strong>
+<hr/>
