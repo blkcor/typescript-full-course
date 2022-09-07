@@ -168,7 +168,7 @@ const teacherInfo: [string, string, number] = ['Dell', 'mail', 18];
 
 
 ## Day4
->2022.9.9
+>2022.9.10
 <hr/>
 <strong>Interface</strong>
 <hr/>
@@ -219,5 +219,45 @@ const setPersonName = (person: Person, age: number) => {
 //user function interface 
 const sayHi: SayHi = (word: string) => word;
 
+
+```
+
+
+
+
+
+## Day5 
+>2022.9.10
+<hr/>
+<strong>Abstract Class</strong>
+<hr/>
+
+```typescript
+abstract class Geom {
+    //abstract function getArea
+    abstract getArea(): number;
+}
+
+class Circle extends Geom {
+    private radius: number;
+    getArea() {
+        return Math.PI * (this.radius ** 2);
+    }
+}
+
+class Square {
+    private width: number;
+    getArea() {
+        return this.width ** 2;
+    }
+}
+
+class Triangle {
+    private width: number;
+    private height: number;
+    getArea() {
+        return this.width * this.height;
+    }
+}
 
 ```
