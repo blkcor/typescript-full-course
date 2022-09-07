@@ -261,3 +261,30 @@ class Triangle {
 }
 
 ```
+
+## Day6
+>2022.9.11
+<hr/>
+<strong>nodemon and concurrently</strong>
+<hr/>
+
+```bash
+yarn add nodemon concurrently -D
+
+```
+### 什么是nodemon?
+帮助我们动态监测项目文件的变化,并且帮助我们执行自定义脚本。
+
+### 什么是concurrently
+顾名思义,可以帮助我们并行执行脚本命令
+
+```json
+    ...
+    'scripts':{
+        'dev:build':"tsc -w" //动态监测源代码  变化帮我们进行编译  可以设置ts.config.json中的OutDir指定输出目录
+        'dev:start':"nodemon node ./xxx/xxx.js" //监测项目变化 帮助我们执行后面的node脚本 可配置nodemonConfi ignore file/dir optionally
+        'dev':"concurrently npm:dev:*" //很容易看懂
+    }
+
+    ...
+```
