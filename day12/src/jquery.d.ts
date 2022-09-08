@@ -2,3 +2,4 @@
 declare var $: (param: () => void) => {};
 
 //declare a global function 
+declare function $(param: () => void): void;
