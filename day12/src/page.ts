@@ -1,4 +1,6 @@
 $(function () {
-    alert('111')
+    $('body').html("<h1>Hello World!</h1>")
 })
+
+
 
