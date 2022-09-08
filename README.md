@@ -364,7 +364,7 @@ console.log(getWeather(1))
 <hr/>
 
 ```typescript
-
+    
 ```
 
 
