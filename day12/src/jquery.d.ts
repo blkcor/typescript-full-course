@@ -26,4 +26,3 @@ namespace $ {
 }
 declare var $: Jquery; */
 
-<h3 color='red' > 这仅仅只是人工帮助ts理解js的代码, 实际上的逻辑还是执行js中的 < /h3></h3 >
