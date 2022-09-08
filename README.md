@@ -466,10 +466,13 @@ yarn add parcel -D
 ## Day12
 >2022.9.17
 <hr/>
-<strong></strong>
+<strong>x.d.ts global type</strong>
 <hr/>
 
+```typescript
 
+
+```
 
 
 

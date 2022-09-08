@@ -1,4 +1,4 @@
 /node_modules
-/day11/.parcel-cache
-/day11/node_modules
-/day11/dist
+/*/.parcel-cache
+/*/node_modules
+/*/dist

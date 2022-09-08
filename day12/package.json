@@ -1,0 +1,10 @@
+{
+  "name": "day12",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "blkcor",
+  "scripts": {
+    "test": "parcel ./src/index.html"
+  },
+  "license": "MIT"
+}
