@@ -392,8 +392,51 @@ join2<number, string>(1, '2');
 <strong>namespace</strong>
 <hr/>
 
-```typescript
 
+>home.ts
+```typescript
+///<reference path="components.ts"/>
+namespace Home {
+    //when compiler compile these four classes
+    //we will have four global var
+    //it makes project hard to maintain
+    //so we elicit namespace
+    export class Page {
+        constructor() {
+            new Components.Header();
+            new Components.Content();
+            new Components.Footer();
+        }
+    }
+}
+
+```
+
+>components.ts
+```typescript
+namespace Components {
+    export class Header {
+        constructor() {
+            const elem: HTMLDivElement = document.createElement('div');
+            elem.innerHTML = 'This is Header';
+            document.body.append(elem);
+        }
+    }
+    export class Content {
+        constructor() {
+            const elem: HTMLDivElement = document.createElement('div');
+            elem.innerHTML = 'This is Content';
+            document.body.append(elem);
+        }
+    }
+    export class Footer {
+        constructor() {
+            const elem: HTMLDivElement = document.createElement('div');
+            elem.innerHTML = 'This is Footer';
+            document.body.append(elem);
+        }
+    }
+}
 
 ```
 
