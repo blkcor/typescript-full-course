@@ -443,6 +443,31 @@ namespace Components {
 
 
 
+## Day11
+>2022.9.16
+<hr/>
+<strong>parcel pack ts</strong>
+<hr/>
+
+>installment
+```bash
+yarn add parcel -D
+
+```
+
+```json
+"scripts":{
+    //will parse .ts .d.ts  file in the index.html 
+    "test":"parcel ./src/index.html"
+}
+
+```
+
+## Day12
+>2022.9.17
+<hr/>
+<strong></strong>
+<hr/>
 
 
 
